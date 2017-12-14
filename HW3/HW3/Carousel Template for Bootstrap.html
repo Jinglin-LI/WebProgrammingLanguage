@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://getbootstrap.com/docs/4.0/examples/carousel/?# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>._BackToTopPlus{width:35px;height:35px;border-radius:5px; position:fixed; right:10px; cursor:pointer; background-repeat:no-repeat; background-position:50% 50%; background-color:#000; opacity:.1;transition:opacity .2s ease-in-out;z-index:99999;}._BackToTopPlus:hover{opacity:.5}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Carousel Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Carousel Template for Bootstrap_files/carousel.css" rel="stylesheet">
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      // click to hide and show context
+      $("#hide").click(function(){
+        $("#showhidetext").hide();
+      });
+      $("#show").click(function(){
+        $("#showhidetext").show();
+      });
+
+      // click to slide the panel down or up
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+
+      // fade in and fade out
+      $("#FadeInButton").dblclick(function(){
+        $("#div1").fadeIn("slow");
+      }); 
+      $("#FadeInButton").dblclick(function(){
+        $("#div1").fadeOut("slow");
+      });
+
+      // fade to
+      $("#FadeToButton").dblclick(function(){
+        $("#div2").fadeTo("slow", 0.4);
+      });
+
+      // fade Togger
+      $("#FadeToggerButton").dblclick(function(){
+        $("#div3").fadeToggle();
+        $("#div4").fadeToggle("slow");
+        $("#div5").fadeToggle(3000);
+      });
+
+      // Mouseenter and Mouseleave
+      $("#AnimationButton").mouseenter(function(){
+        var div=$("#AnimationDiv");
+        div.animate({
+          height:'300px',opacity:'0.4'
+        });
+        div.animate({
+          width:'300px',opacity:'0.8'
+        });
+        div.animate({
+          height:'100px',opacity:'0.4'
+        });
+        div.animate({
+          width:'100px',opacity:'0.8'
+        },function(){
+          alert("Done!");
+        });
+
+     //   $("#AnimationDiv").animate({
+      //    height:'toggle'
+       // },function(){
+        //  alert("Done!");
+       // });
+      });
+
+      $("#AnimationButton").mouseleave(function(){
+        $("#AnimationDiv").stop(true);
+        alert("Done!");
+      });
+
+      i = 0;
+      $("#input1").keypress(function(){
+        i++;
+        $("#KeypressDiv").fadeTo("slow", 0.1 + i / 10);
+      });
+
+      $("#input2").keydown(function(){
+        $("#KeydownDiv").animate({
+          width:'100px',opacity:'0.8'
+        });
+        $("#KeydownDiv").animate({
+          height:'50px',opacity:'0.4'
+        });
+        $("#KeydownDiv").animate({
+          width:'100px',opacity:'0.8'
+        });
+        $("#KeydownDiv").animate({
+          height:'50px',opacity:'0.4'
+        });
+      });
+
+    });
+
+    </script>
+
+    <style type="text/css"> 
+    #panel,#flip {
+      padding:5px; text-align:center; background-color:#e5eecc; 
+    }
+    #panel {
+      padding:50px; display:none;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="http://cs.utdallas.edu/">UTD School 1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://www.utdallas.edu/biology/">UTD School 2</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://jindal.utdallas.edu/">UTD School 3</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="ContactMe.html">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="http://cs.utdallas.edu/"><img class="first-slide" src="http://cs.utdallas.edu/wp-content/uploads/2014/03/Building_01.jpg" alt="First slide" width="1500" height="500"></a>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-left">   
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="http://www.utdallas.edu/biology/"><img class="second-slide" src="http://www.beckgroup.com/wp-content/uploads/2015/08/EH_UTD-BioSci_Ext_03.jpg" alt="Second slide" width="1500" height="500"></a>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="http://jindal.utdallas.edu/"><img class="third-slide" src="http://www.utdallas.edu/news/imgs/photos-2013-04/jsom-building-900-2013-07.jpg" alt="Third slide" width="1500" height="500"></a>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-right">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" data-slide="prev">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" role="button" data-slide="next">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+      
+      <!-- START THE FEATURETTES -->
+
+      <br><br>
+      <p id="showhidetext"> If you click on the "Hide" button, I will disapear; If you click on "Show" button, I will show again.</p>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+
+
+      <br><br>
+      <div id="flip">Click to slide the panel down or up</div>
+      <div id="panel">Hello world!</div>
+
+      <br><br>
+      <br>
+      <button id="FadeInButton"> <b>Double</b> Click to fade in and fade out box</button>
+      <div id="div1" style="width:80px;height:80px;display:none;background-color: red"></div><br>
+
+      <br><br>
+      <br>
+      <button id="FadeToButton"> <b>Double</b> Click to fade to box</button>
+      <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+
+
+      <br>
+      <button id="FadeToggerButton"><b>Double</b> Click to fade in and fade toggle boxes</button>
+      <div id="div3" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+      <div id="div4" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+      <div id="div5" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+
+      <button id="AnimationButton">Start Animation when mouse enter, stop when mouse leave </button> <br/> <br/>
+      <div id="AnimationDiv" style="background:black;height:100px;width:100px;position:absolute;">
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+      <br><br><br><br><br><br>
+
+
+      Press the key for 3 - 10 times inside. More key-press, more red: <input id="input1" type="text">
+      <div id="KeypressDiv" style="width:80px;height:80px;display:none;background-color: red"></div>
+
+      <br><br><br>
+
+
+      Press the key (Let the key down) inside. More key-down, more flicker <input id="input2" type="text">
+      <div id="KeydownDiv" style="background:blue;height:100px;width:100px;position:absolute;"></div>
+    
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Carousel Template for Bootstrap_files/jquery-3.2.1.slim.min.js.下载" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./Carousel Template for Bootstrap_files/popper.min.js.下载"></script>
+    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js.下载"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./Carousel Template for Bootstrap_files/holder.min.js.下载"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.js.下载"></script>
+
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg><div class="_BackToTopPlus" style="background-image:url(data:img/png;base64,R0lGODlhEgAUAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAASABQAAAImjI+py+IPo4xmWmRpyq5dFkzgoY3VY5KS9ykcKy6vnMEr3W417hQAOw==);top:229px;"></div><div class="_BackToTopPlus" style="background-image:url(data:img/png;base64,R0lGODlhEgAUAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAASABQAAAIqlB2peX27nINKNsoswnrTLmABKJKcJH5PGl3siKZdabZgWN2rzuPv/yoAADs=);top:274px;"></div></body></html>

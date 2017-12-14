@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<chapter>
+<title>Chapter 1</title>
+<section>
+<title>Section 1</title>
+<paragraph number="1" page="24">
+<text>This is a sample text about everything good. </text>
+<glossterms OtherTerm="good"/>
+<glossterms OtherTerm="sample"/>
+</paragraph>
+<paragraph number="2" page="26">
+<text>This is a second sample text about everything good.
+</text>
+<glossterms OtherTerm="second"/>
+</paragraph>
+</section>
+<section>
+<title>Section 2</title>
+<paragraph number="1" page="28">
+<text>This is a sample text about everything good. </text>
+<glossterms OtherTerm="good"/>
+<glossterms OtherTerm="sample"/>
+</paragraph>
+<paragraph number="2" page="28">
+<text>This is a second sample text about everything good.
+</text>
+<glossterms OtherTerm="second"/>
+</paragraph>
+</section>
+</chapter>

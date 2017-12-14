@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xpath.xsl" type="text/xsl"?>
+<book
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="bookinformation.xsd">
+<bookinformation>
+  <title>Aeee</title>
+  <author>author1</author>
+  <publicationdate>2017-11-11</publicationdate>
+  <cost currency='USD'>28</cost>
+  <publisher>publisher1</publisher>
+  <publisherinformation>
+    <publishername>Publisher Aame </publishername>
+    <publisheraddress>
+      <streetname>Street_Aame</streetname>
+      <city>Dallas</city>
+      <zipcode>18127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Ueee</title>
+  <author>author2</author>
+  <publicationdate>2017-11-12</publicationdate>
+  <cost currency='USD'>23</cost>
+  <publisher>publisher2</publisher>
+  <publisherinformation>
+    <publishername>Publisher Bame </publishername>
+    <publisheraddress>
+      <streetname>Street_Bame</streetname>
+      <city>Dallas</city>
+      <zipcode>12283</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Ceee</title>
+  <author>author3</author>
+  <publicationdate>2008-11-13</publicationdate>
+  <cost currency='USD'>28</cost>
+  <publisher>publisher3</publisher>
+  <publisherinformation>
+    <publishername>Publisher Came </publishername>
+    <publisheraddress>
+      <streetname>Street_Came</streetname>
+      <city>Tianjin</city>
+      <zipcode>18137</zipcode>
+      <country>CHINA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Deee</title>
+  <author>author4</author>
+  <publicationdate>2000-11-14</publicationdate>
+  <cost currency='USD'>29</cost>
+  <publisher>publisher4</publisher>
+  <publisherinformation>
+    <publishername>Publisher Dame </publishername>
+    <publisheraddress>
+      <streetname>Street_Dame</streetname>
+      <city>Garland</city>
+      <zipcode>18127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Eeee</title>
+  <author>author5</author>
+  <publicationdate>2017-11-15</publicationdate>
+  <cost currency='USD'>21</cost>
+  <publisher>publisher5</publisher>
+  <publisherinformation>
+    <publishername>Publisher Eame </publishername>
+    <publisheraddress>
+      <streetname>Street_Eame</streetname>
+      <city>Sanfan</city>
+      <zipcode>18122</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Feee</title>
+  <author>author6</author>
+  <publicationdate>2017-11-16</publicationdate>
+  <cost currency='USD'>31</cost>
+  <publisher>publisher6</publisher>
+  <publisherinformation>
+    <publishername>Publisher Fame </publishername>
+    <publisheraddress>
+      <streetname>Street_Fame</streetname>
+      <city>Poland</city>
+      <zipcode>12203</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Geee</title>
+  <author>author7</author>
+  <publicationdate>2017-11-17</publicationdate>
+  <cost currency='USD'>32</cost>
+  <publisher>publisher7</publisher>
+  <publisherinformation>
+    <publishername>Publisher Game </publishername>
+    <publisheraddress>
+      <streetname>Street_Game</streetname>
+      <city>Beijing</city>
+      <zipcode>18107</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Heee</title>
+  <author>author8</author>
+  <publicationdate>2017-11-18</publicationdate>
+  <cost currency='USD'>33</cost>
+  <publisher>publisher8</publisher>
+  <publisherinformation>
+    <publishername>Publisher Hame </publishername>
+    <publisheraddress>
+      <streetname>Street_Hame</streetname>
+      <city>Hanguo</city>
+      <zipcode>18127</zipcode>
+      <country>USU</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Ieee</title>
+  <author>author9</author>
+  <publicationdate>2017-11-19</publicationdate>
+  <cost currency='USD'>34</cost>
+  <publisher>publisher9</publisher>
+  <publisherinformation>
+    <publishername>Publisher Iame </publishername>
+    <publisheraddress>
+      <streetname>Street_Iame</streetname>
+      <city>Riben</city>
+      <zipcode>13187</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Jeee</title>
+  <author>author10</author>
+  <publicationdate>2017-11-20</publicationdate>
+  <cost currency='USD'>35</cost>
+  <publisher>publisher10</publisher>
+  <publisherinformation>
+    <publishername>Publisher Jame </publishername>
+    <publisheraddress>
+      <streetname>Street_Jame</streetname>
+      <city>Dss</city>
+      <zipcode>28127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Keee</title>
+  <author>author11</author>
+  <publicationdate>2017-11-21</publicationdate>
+  <cost currency='USD'>36</cost>
+  <publisher>publisher11</publisher>
+  <publisherinformation>
+    <publishername>Publisher Kame </publishername>
+    <publisheraddress>
+      <streetname>Street_Kame</streetname>
+      <city>Kallas</city>
+      <zipcode>38127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Leee</title>
+  <author>author12</author>
+  <publicationdate>2017-11-22</publicationdate>
+  <cost currency='USD'>37</cost>
+  <publisher>publisher12</publisher>
+  <publisherinformation>
+    <publishername>Publisher Lame </publishername>
+    <publisheraddress>
+      <streetname>Street_Lame</streetname>
+      <city>Lallas</city>
+      <zipcode>48127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Meee</title>
+  <author>author13</author>
+  <publicationdate>2017-11-23</publicationdate>
+  <cost currency='USD'>38</cost>
+  <publisher>publisher13</publisher>
+  <publisherinformation>
+    <publishername>Publisher Mame </publishername>
+    <publisheraddress>
+      <streetname>Street_Mame</streetname>
+      <city>Mallas</city>
+      <zipcode>58127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Neee</title>
+  <author>author14</author>
+  <publicationdate>2017-11-24</publicationdate>
+  <cost currency='USD'>39</cost>
+  <publisher>publisher14</publisher>
+  <publisherinformation>
+    <publishername>Publisher Name </publishername>
+    <publisheraddress>
+      <streetname>Street_Name</streetname>
+      <city>Nallas</city>
+      <zipcode>68127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Oeee</title>
+  <author>author15</author>
+  <publicationdate>2017-11-25</publicationdate>
+  <cost currency='USD'>40</cost>
+  <publisher>publisher15</publisher>
+  <publisherinformation>
+    <publishername>Publisher Oame </publishername>
+    <publisheraddress>
+      <streetname>Street_Oame</streetname>
+      <city>Oallas</city>
+      <zipcode>78127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Peee</title>
+  <author>author16</author>
+  <publicationdate>2017-11-26</publicationdate>
+  <cost currency='USD'>41</cost>
+  <publisher>publisher16</publisher>
+  <publisherinformation>
+    <publishername>Publisher Pame </publishername>
+    <publisheraddress>
+      <streetname>Street_Pame</streetname>
+      <city>Pallas</city>
+      <zipcode>88127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Qeee</title>
+  <author>author17</author>
+  <publicationdate>2017-11-27</publicationdate>
+  <cost currency='USD'>42</cost>
+  <publisher>publisher17</publisher>
+  <publisherinformation>
+    <publishername>Publisher Qame </publishername>
+    <publisheraddress>
+      <streetname>Street_Qame</streetname>
+      <city>Qallas</city>
+      <zipcode>98127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Reee</title>
+  <author>author18</author>
+  <publicationdate>2017-11-28</publicationdate>
+  <cost currency='USD'>43</cost>
+  <publisher>publisher18</publisher>
+  <publisherinformation>
+    <publishername>Publisher Rame </publishername>
+    <publisheraddress>
+      <streetname>Street_Rame</streetname>
+      <city>Rallas</city>
+      <zipcode>17127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Seee</title>
+  <author>author19</author>
+  <publicationdate>2017-11-29</publicationdate>
+  <cost currency='USD'>44</cost>
+  <publisher>publisher19</publisher>
+  <publisherinformation>
+    <publishername>Publisher Same </publishername>
+    <publisheraddress>
+      <streetname>Street_Same</streetname>
+      <city>Sallas</city>
+      <zipcode>16127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+<bookinformation>
+  <title>Teee</title>
+  <author>author20</author>
+  <publicationdate>2017-11-30</publicationdate>
+  <cost currency='USD'>45</cost>
+  <publisher>publisher20</publisher>
+  <publisherinformation>
+    <publishername>Publisher Tame </publishername>
+    <publisheraddress>
+      <streetname>Street_Tame</streetname>
+      <city>Tallas</city>
+      <zipcode>18127</zipcode>
+      <country>USA</country>
+    </publisheraddress>
+  </publisherinformation>
+</bookinformation>
+
+</book>

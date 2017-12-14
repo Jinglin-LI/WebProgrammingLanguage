@@ -1,0 +1,34 @@
+	table,th,td {
+		border:1px solid black;
+	}
+	h1 {
+		text-align:center;
+	}
+	.Courses {
+		text-align: left;
+	}
+	.ContactPart {
+		text-align: right;
+	}
+	#Contact {
+		text-align: left;
+	}
+	#CourseName {
+		background-color: blue;
+	}
+	#EducationPart {
+		text-align: left;
+	}
+	#ConferencePaper {
+		text-align: right;
+	}
+
+	section ul {font-size:0.5em;}
+	section ol {font-size:0.8em;}
+	
+	#UTD.UTDallas {
+		background-color: blue;
+	}
+	#NUS.NationalUniversityOfSingapore {
+		background-color: yellow;
+	}

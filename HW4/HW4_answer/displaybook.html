@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Display book information:</h2>
+
+<button type="button" onclick="loadXMLDoc()">
+Get book information</button>
+
+<p id="demo"></p>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "BookInformation.xml", true);
+  xmlhttp.send();
+}
+
+function myFunction(xml) {
+  var x, i, xmlDoc, txtTitle, txtAuthor, txtPublicationDate, txtCost, txtPublisherName, txtPublisherAddressStreetName, txtPublisherAddressCity, txtPublisherAddressZip, txtPublisherAddressCountry, txt;
+  xmlDoc = xml.responseXML;
+
+  txtTitle = [20];
+  txtAuthor = [20];
+  txtPublicationDate = [20];
+  txtCost = [20];
+  txtPublisherName = [20];
+  txtPublisherAddressStreetName = [20];
+  txtPublisherAddressCity = [20];
+  txtPublisherAddressZip = [20];
+  txtPublisherAddressCountry = [20];
+  txt = "";
+
+  x = xmlDoc.getElementsByTagName("title");
+  for (i = 0; i< x.length; i++) {
+  	txtTitle[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("author");
+  for (i = 0; i< x.length; i++) {
+  	txtAuthor[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("publicationdate");
+  for (i = 0; i< x.length; i++) {
+  	txtPublicationDate[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("cost");
+  for (i = 0; i< x.length; i++) {
+  	txtCost[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("publishername");
+  for (i = 0; i< x.length; i++) {
+  	txtPublisherName[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("streetname");
+  for (i = 0; i< x.length; i++) {
+  	txtPublisherAddressStreetName[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("city");
+  for (i = 0; i< x.length; i++) {
+  	txtPublisherAddressCity[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("zipcode");
+  for (i = 0; i< x.length; i++) {
+  	txtPublisherAddressZip[i] = x[i].childNodes[0].nodeValue;
+  }
+  x = xmlDoc.getElementsByTagName("country");
+  for (i = 0; i< x.length; i++) {
+  	txtPublisherAddressCountry[i] = x[i].childNodes[0].nodeValue;
+  }
+  for (var i = 0; i < 20; i++) {
+  	txt += "title: " + txtTitle[i] + ", author: " + txtAuthor[i] + ", publication date: " + txtPublicationDate[i] + ", cost: " + txtCost[i] + ", publisher name: " + txtPublisherName[i] + ", street name: " + txtPublisherAddressStreetName[i] + ", city: " + txtPublisherAddressCity[i] + ", zipcode: " + txtPublisherAddressZip[i] + ", country: " + txtPublisherAddressCountry[i] + "<br>";
+  }
+
+
+ document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" language="javascript">  
+		 
+		function addRow(){    
+			var tab = document.getElementById('tab');  
+			var row =tab.insertRow();  
+
+			cell = row.insertCell();  
+			cell.innerHTML=" <input type='text'>";  
+
+			cell = row.insertCell();  
+			cell.innerHTML=" <input type='text'>";  
+
+			cell = row.insertCell();  
+			cell.innerHTML=" <input type='text'>"  
+
+            cell = row.insertCell();  
+			cell.innerHTML=" <input type='text'>";
+
+            cell = row.insertCell();  
+			cell.innerHTML=" <input type='button' value='delete' onclick='deleteRow(this);'/>";	 
+		} 
+
+		function deleteRow(id){  
+			var tab = document.getElementById('tab');
+			var trobj = id.parentNode.parentNode;
+			tab.deleteRow(trobj.rowIndex);
+		}  
+		function changeTrColor(obj) {
+			if (event.altKey) {				
+				obj.className='d_over';
+			}
+		}
+		function changeBackColor(obj) {
+		//	obj.style.backgroundColor="write";
+			obj.className='.d_out';
+		}
+	</script> 
+
+	<style>
+		.d_over{color:red; background-color:blue;}
+		.d_out{background-color:write;}
+	</style>
+</head>
+
+<body> 
+	
+	<table id="tab" border="1">
+		<tr><td>First Name</td><td>Last Name</td><td>Email Address</td><td>Telephone Number</td><td></td></tr>
+		<tr><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"><td><input type='button' value='delete'onclick='deleteRow(this);'/></td></td></tr>
+
+		<tr"><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td onmouseenter="isKeyPressed(event)"><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"><td><input type='button' value='delete'onclick='deleteRow(this);'/></td></td></tr>
+
+        <tr><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"></td><td><input type="text" onmousemove="changeTrColor(this)" onmouseout="changeBackColor(this)"><td><input type='button' value='delete'onclick='deleteRow(this);'/></td></td></tr>
+	</table>
+        <input type="button" onclick="addRow();" value="add"/>
+    </div>
+</body> 
+</HTML>
