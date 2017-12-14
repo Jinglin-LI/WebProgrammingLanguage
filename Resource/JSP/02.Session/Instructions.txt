@@ -1,0 +1,29 @@
+1. Download and install (unzip) Tomcat: 
+http://tomcat.apache.org/download-80.cgi
+
+2. Download and install Eclipse IDE for Java EE Developers (version: Mars or Neon): http://www.eclipse.org/downloads/packages/release/Mars
+
+3. Download and install Java Developer Kit (JDK) 1.8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+4. Associate Java 1.8 with Eclipse: 
+http://www.mkyong.com/eclipse/eclipse-how-to-attach-jdk-source-code/
+
+5. Add and start Tomcat Server in Eclipse: 
+http://www.vogella.com/tutorials/EclipseWTP/article.html#web-server-configuration-in-eclipse
+
+6. Create an Dynamic Web Project in Eclipse: 
+	a. http://www.javatpoint.com/MVC-in-jsp
+	b. https://docs.oracle.com/cd/A87860_01/doc/java.817/a83726/basics4.htm
+	c. Follow instructions presented in class
+
+7. Build and deploy the Web Project on Tomcat in Eclipse
+http://www.vogella.com/tutorials/EclipseWTP/article.html#exercise-create-and-run-a-servlet
+
+8. Validate the deployment:
+http://localhost:8080/jsp-servlet-mvc-session/
+
+9. Create a war file from Eclipse:
+http://www.vogella.com/tutorials/EclipseWTP/article.html#web-archive-how-to-create-a-war-file-from-eclipse
+
+10. Deploy a war file in Tomcat:
+http://www.codejava.net/servers/tomcat/how-to-deploy-a-java-web-application-on-tomcat#DeployMethod2
