@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+     <h1>My First JavaScript</h1>
+     <p>Click the button to display the date.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+     <script>
+       function myFunction()
+       {
+          document.getElementById("demo").innerHTML = Date();
+        }
+     </script>
+
+   </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          document.getElementById("demo").innerHTML = Date();
+        }
+     </script>
+  </head>
+  <body>
+
+     <h1>My First JavaScript</h1>
+     <p>Click the button to display the date.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+   </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+       function myFunction()
+       {
+          document.getElementById("demo").innerHTML="My First JavaScript Function";
+       }
+    </script>
+  </head>
+  <body>
+    <h1>My Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+  </body>
+</html> 
+
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+
+     <h1>My First JavaScript</h1>
+     <p>Click the button to display the date.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+     <script src="http://www.hlt.utdallas.edu/~mithun/sample.js"></script>
+
+  </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+	var x="";
+	var time=new Date().getHours();
+	if (time<12)
+	{
+	  x="Good morning";
+	}
+	else if (time<20)
+	{
+	  x="Good evening";
+	}
+	else
+	{
+	  x="Good night";
+	}
+	document.getElementById("demo").innerHTML=x;
+       }
+     </script>
+  </head>
+  <body>
+
+     <h1>My First JavaScript</h1>
+     <p>Click the button to display the date.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+   </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display what day it is today:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case  6:
+            day = "Saturday";
+            break;
+    }
+    document.getElementById("demo").innerHTML = "Today is " + day;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display what day it is today:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function computeDay(dateDay) {
+    var day;
+    switch (dateDay) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case  6:
+            day = "Saturday";
+            break;
+    }
+    return day;
+}
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Today is " + computeDay(new Date().getDay());
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+  var person={
+	firstname : "John",
+	lastname� : "Doe",
+	id������� :� 5566
+  };
+
+  text = "";
+  text += person["firstname"] + " " + person.lastname + "<br>";
+
+  document.getElementById("demo").innerHTML = text;
+
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+	cars = ["BMW", "Volvo", "Saab", "Ford"];
+	text = "";
+	var i;
+	for (i = 0; i < cars.length; i++) {
+	    text += cars[i] + "<br>";
+	}
+
+	document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+	cars = ["BMW", "Volvo", "Saab", "Ford"];
+	document.getElementById("demo").innerHTML = cars[1];
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+       function changetext(id)
+       {
+         id.innerHTML="Ooops!";
+       }
+  </script>
+  <h1 onclick="changetext(this)">Click on this text!</h1>
+</body>
+</html>
+
+
+
+
+<html>
+
+<head>
+
+<script language = "JavaScript">
+
+function preloader() 
+
+{
+
+heavyImage = new Image(); 
+
+heavyImage.src = "http://www.hlt.utdallas.edu/~mithun/2.jpg";
+
+}
+
+</script>
+
+</head>
+
+<body onLoad="javascript:preloader()">
+
+<a href="#" onMouseOver="javascript:document.img01.src='http://www.hlt.utdallas.edu/~mithun/2.jpg'">
+
+<img name="img01" src="http://www.hlt.utdallas.edu/~mithun/planets.gif"></a>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="id1">My Heading 1</h1>
+  <button type="button" 
+      onclick="document.getElementById('id1').style.color='red'">
+      Click Me!
+  </button>
+</body>
+</html>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Hover over the button to simulate a mouse-click.</p>
+
+<form>
+  <input type="button" value="hover over" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("myCheck").click();
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the HTML DOM to assign an "onclick" event to a button element.</p>
+
+<button id="demo">Click me.</p>
+
+<script>
+document.getElementById("demo").onclick = function() {myFunction()};
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<html>
+<head>
+<script>
+function goBack() {
+    window.history.back()
+}
+function goForward() {
+    window.history.forward()
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="Back" onclick="goBack()">
+<input type="button" value="Forward" onclick="goForward()">
+
+</body>
+</html>
+
+
+
+http://www.hlt.utdallas.edu/~mithun/window_back_front.html
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the entire URL of the current page.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = location.href;
+}
+
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Refresh" content="0;URL=http://www.wikipedia.org"/>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+window.location.href = "http://www.wikipedia.org";
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display an alert box:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    window.open("http://www.wikipedia.org", "new one", "height=40,width=50");
+
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to wait 3 seconds, then alert "Hello".</p>
+<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    setInterval(function(){alert("Hello")}, 3000);
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A script on this page starts this clock:</p>
+<p id="demo"></p>
+
+<button onclick="myStopFunction()">Stop time</button>
+
+<script>
+var myVar = setInterval(function(){myTimer()}, 1000);
+
+function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction() {
+    clearInterval(myVar);
+}
+</script>
+
+</body>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display an alert box:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a confirm box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Press a button!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "Class 6314");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<head>
+<script>
+  function clickCounter()
+  {
+    if(typeof(Storage) !== "undefined")
+    {
+      if (localStorage.clickcount)
+      {
+         localStorage.clickcount=Number(localStorage.clickcount)+1;
+      }
+      else
+      {
+        localStorage.clickcount=1;
+      }
+      document.getElementById("result").innerHTML="You have clicked the button " + localStorage.clickcount + " time(s).";
+    }
+    else
+    {
+       document.getElementById("result").innerHTML="Sorry, your browser does not support web storage...";
+    }
+  }
+</script>
+</head>
+<body>
+  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+  <div id="result"></div>
+</body>

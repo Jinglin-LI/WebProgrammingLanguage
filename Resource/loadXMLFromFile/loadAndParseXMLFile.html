@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          
+          if (window.XMLHttpRequest)
+          {
+            xmlhttp=new XMLHttpRequest();
+          }
+          else
+          {
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          xmlhttp.open("GET","http://utdallas.edu/~mxb026000/sampleBook.xml",false);
+          xmlhttp.send();
+          xmlDoc = xmlhttp.responseXML;
+          var x=xmlDoc.getElementsByTagName("title");
+          var txt = "";
+          for (i=0;i<x.length;i++)
+          {
+            txt += x[i].nodeName + "=" + x[i].childNodes[0].nodeValue + "<br>";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+     </script>
+  </head>
+  <body>
+
+     <h1>My First XML Parsing JavaScript</h1>
+     <p>Click the button to display book titles.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+   </body>
+</html>

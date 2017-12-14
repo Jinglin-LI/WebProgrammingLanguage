@@ -1,0 +1,1 @@
+java -Xmx1600m -cp `find $CXF_HOME/lib -name "*.jar" | tr -t '\012' ':' `:build/classes/ com.xyz.client.BillPaymentClient
