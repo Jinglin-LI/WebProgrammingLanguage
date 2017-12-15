@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          xmlDoc=parser.parseFromString(
+               "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"+
+                 "<bookstore>"+
+                   "<book  category=\"Cooking\">"+
+                     "<title lang=\"en\">Everyday Italian</title>"+
+                     "<author>Giada De Laurentiis</author>"+
+                     "<year>2005</year>"+
+                     "<price>30.00</price>"+
+                   "</book>"+
+                   "<book category=\"Computer Science\">"+
+                     "<title lang=\"en\">Everyday C++</title>"+
+                     "<author>Jon Carter</author>"+
+                     "<year>2015</year>"+
+                     "<price>22.00</price>"+
+                   "</book>"+
+                 "</bookstore>"
+              ,"text/xml");
+
+          var x=xmlDoc.getElementsByTagName("title");
+          for (i=0;i<x.length;i++)
+          {
+            document.write("<br>");
+            document.write("<br>");
+            document.write(x[i].nodeName);
+            document.write(": ");
+            document.write(x[i].childNodes[0].nodeValue);
+            document.write("<br>");
+          }
+
+        }
+     </script>
+  </head>
+  <body>
+
+     <h1>My First XML Parsing JavaScript</h1>
+     <p>Click the button to display book titles.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          xmlDoc=parser.parseFromString(
+               "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"+
+                 "<bookstore>"+
+                   "<book  category=\"Cooking\">"+
+                     "<title lang=\"en\">Everyday Italian</title>"+
+                     "<author>Giada De Laurentiis</author>"+
+                     "<year>2005</year>"+
+                     "<price>30.00</price>"+
+                   "</book>"+
+                   "<book category=\"Computer Science\">"+
+                     "<title lang=\"en\">Everyday C++</title>"+
+                     "<author>Jon Carter</author>"+
+                     "<year>2015</year>"+
+                     "<price>22.00</price>"+
+                   "</book>"+
+                 "</bookstore>"
+              ,"text/xml");
+
+          var x=xmlDoc.documentElement.childNodes;
+          for (i=0;i<x.length;i++)
+          {
+            document.write("<br>");
+            document.write("<br>");
+            document.write(x[i].nodeName);
+            document.write(": ");
+            document.write(x[i].childNodes[0].nodeValue);
+            document.write("<br>");
+            var y=x[i].childNodes;
+            for (j=0;j<y.length;j++)
+            {
+              document.write(y[j].nodeName);
+              document.write(": ");
+              document.write(y[j].childNodes[0].nodeValue);
+              document.write("<br>");
+            }
+          }
+
+        }
+     </script>
+  </head>
+  <body>
+
+     <h1>My First XML Parsing JavaScript</h1>
+     <p>Click the button to display book info.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+   </body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       function myFunction()
+       {
+          parser=new DOMParser();
+          xmlDoc=parser.parseFromString(
+               "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"+
+                 "<bookstore>"+
+                   "<book  category=\"Cooking\">"+
+                     "<title lang=\"en\">Everyday Italian</title>"+
+                     "<author>Giada De Laurentiis</author>"+
+                     "<year>2005</year>"+
+                     "<price>30.00</price>"+
+                   "</book>"+
+                   "<book category=\"Computer Science\">"+
+                     "<title lang=\"en\">Everyday C++</title>"+
+                     "<author>Jon Carter</author>"+
+                     "<year>2015</year>"+
+                     "<price>22.00</price>"+
+                   "</book>"+
+                 "</bookstore>"
+              ,"text/xml");
+
+          var x=xmlDoc.getElementsByTagName("title");
+          for (i=0;i<x.length;i++)
+          {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("title: ");
+            document.write(x[i].getAttribute("lang"));
+            document.write("<br>");
+            document.write("title: ");
+           document.write(x[i].getAttributeNode("lang").nodeValue);
+            document.write("<br>");
+          }
+
+        }
+     </script>
+  </head>
+  <body>
+
+     <h1>My First XML Parsing JavaScript</h1>
+     <p>Click the button to display book titles.</p>
+     <p id="demo"></p>
+
+     <button type="button" onclick="myFunction()">Try it</button>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

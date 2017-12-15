@@ -1,0 +1,62 @@
+On Windows:
+
+	Detailed Instructions: https://blog.didierstevens.com/2015/03/30/howto-make-your-own-cert-with-openssl-on-windows/
+
+	Install OpenSSL: http://slproweb.com/products/Win32OpenSSL.html
+
+	Commands to run:
+			1. set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg 
+					OR
+     			   set OPENSSL_CONF=C:\OpenSSL-Win64\bin\openssl.cfg	
+
+			2. cd C:\OpenSSL-Win64\bin
+		
+			3. C:\OpenSSL-Win64\bin>openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout    mysite.key -out mysite.crt
+
+				Generating a 2048 bit RSA private key
+				....................................................+++
+				............................+++
+				writing new private key to 'mysite.key'
+				-----
+				You are about to be asked to enter information that will be incorporated
+				into your certificate request.
+				What you are about to enter is what is called a Distinguished Name or a DN.
+				There are quite a few fields but you can leave some blank
+				For some fields there will be a default value,
+				If you enter '.', the field will be left blank.
+				-----
+				Country Name (2 letter code) [AU]:US
+				State or Province Name (full name) [Some-State]:TX
+				Locality Name (eg, city) []:Richardson
+				Organization Name (eg, company) [Internet Widgits Pty Ltd]:WPL 6314
+				Organizational Unit Name (eg, section) []:
+				Common Name (e.g. server FQDN or YOUR name) []:
+				Email Address []:
+
+
+
+On Linux:
+     Commands to run:
+		1. sudo yum install openssl
+		
+		2. openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout    mysite.key -out mysite.crt
+
+			Generating a 2048 bit RSA private key
+			.....................................................+++
+			...................................................................................................................+++
+			writing new private key to 'mysite.key'
+			-----
+			You are about to be asked to enter information that will be incorporated
+			into your certificate request.
+			What you are about to enter is what is called a Distinguished Name or a DN.
+			There are quite a few fields but you can leave some blank
+			For some fields there will be a default value,
+			If you enter '.', the field will be left blank.
+			-----
+			Country Name (2 letter code) [XX]:US
+			State or Province Name (full name) []:TX
+			Locality Name (eg, city) [Default City]:Richardson
+			Organization Name (eg, company) [Default Company Ltd]:MyCompany
+			Organizational Unit Name (eg, section) []:MyUnit
+			Common Name (eg, your name or your server's hostname) []:MyHostname
+			Email Address []:myadmin@myhostname.com

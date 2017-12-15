@@ -1,0 +1,29 @@
+1. Download and install (unzip) Tomcat: 
+http://tomcat.apache.org/download-80.cgi
+
+2. Download and install Eclipse IDE for Java EE Developers (version: Mars or Neon): http://www.eclipse.org/downloads/packages/release/Mars
+
+3. Download and install Java Developer Kit (JDK) 1.8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+4. Associate Java 1.8 with Eclipse: 
+http://www.mkyong.com/eclipse/eclipse-how-to-attach-jdk-source-code/
+
+5. Add and start Tomcat Server in Eclipse: http://www.vogella.com/tutorials/EclipseWTP/article.html#webserver_configuration_runtime
+http://www.vogella.com/tutorials/EclipseWTP/article.html#webserver_configuration_starting
+
+6. Create an Dynamic Web Project in Eclipse: 
+	a. Maven-based: http://crunchify.com/how-to-build-restful-service-with-java-using-jax-rs-and-jersey/
+	b. Non-Maven: https://dzone.com/articles/restful-web-services-java
+	c. Follow instructions presented in class
+
+7. Build and deploy the Web Project on Tomcat in Eclipse
+http://www.vogella.com/tutorials/EclipseWTP/article.html#servlets_runservlet
+
+8. Validate the deployment:
+http://localhost:8080/jaxrs-jersey-rest/loginservices/availableusername/cs6314
+
+9. Create a war file from Eclipse:
+http://www.vogella.com/tutorials/EclipseWTP/article.html#wtp_war
+
+10. Deploy a war file in Tomcat:
+http://www.codejava.net/servers/tomcat/how-to-deploy-a-java-web-application-on-tomcat#DeployMethod2

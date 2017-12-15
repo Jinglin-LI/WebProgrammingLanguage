@@ -1,0 +1,1 @@
+java -Xmx1600m -cp "lib/*;build/classes/" com.xyz.client.BillPaymentClient
